@@ -1,0 +1,138 @@
+{
+  "baseline_recipe": {
+    "prerinse_min": 5.0,
+    "temp_c": 75.0,
+    "conc_pct": 1.5,
+    "wash_min": 30.0,
+    "rinse1_l": null,
+    "rinse1_min": 10.0,
+    "final_min": 10.0,
+    "recovery": false
+  },
+  "optimised_recipe": {
+    "temp_c": 74.0,
+    "conc_pct": 1.15,
+    "wash_min": 33.0,
+    "rinse1_l": 1268.0
+  },
+  "per_cycle": {
+    "Today (fixed-time recipe)": {
+      "duration_min": 55.0,
+      "water_l": 4900.0,
+      "naoh_kg": 6.0,
+      "fuel_kwh": 34.673,
+      "co2_kg": 6.935,
+      "cost_inr": 685.356,
+      "log_reduction": 3.903,
+      "residual_naoh_ppm": 0.092
+    },
+    "+ end-point rinse": {
+      "duration_min": 52.313,
+      "water_l": 4416.38,
+      "naoh_kg": 6.0,
+      "fuel_kwh": 34.673,
+      "co2_kg": 6.935,
+      "cost_inr": 656.339,
+      "log_reduction": 3.903,
+      "residual_naoh_ppm": 2.316
+    },
+    "+ optimised T and NaOH": {
+      "duration_min": 55.0,
+      "water_l": 4368.103,
+      "naoh_kg": 4.589,
+      "fuel_kwh": 34.673,
+      "co2_kg": 6.935,
+      "cost_inr": 589.926,
+      "log_reduction": 3.6,
+      "residual_naoh_ppm": 2.444
+    },
+    "+ caustic recovery": {
+      "duration_min": 55.0,
+      "water_l": 4088.103,
+      "naoh_kg": 1.377,
+      "fuel_kwh": 18.281,
+      "co2_kg": 3.656,
+      "cost_inr": 371.215,
+      "log_reduction": 3.6,
+      "residual_naoh_ppm": 2.444
+    }
+  },
+  "reduction_pct": {
+    "water_l": 16.6,
+    "naoh_kg": 77.1,
+    "fuel_kwh": 47.3,
+    "co2_kg": 47.3,
+    "cost_inr": 45.8
+  },
+  "optimiser": {
+    "success": true,
+    "slsqp_cost": 589.93,
+    "grid_cost": 590.47
+  },
+  "annual_per_line": {
+    "orders as they arrive": {
+      "cips": 324,
+      "today": {
+        "water_l": 1587600.0,
+        "naoh_kg": 1944.0,
+        "fuel_kwh": 11234.117647058823,
+        "co2_kg": 2246.823529411765,
+        "cost_inr": 222055.41176470587
+      },
+      "optimised": {
+        "water_l": 1324545.3989594711,
+        "naoh_kg": 446.0035548655398,
+        "fuel_kwh": 5923.058823569159,
+        "co2_kg": 1184.611764713832,
+        "cost_inr": 120273.58978900961
+      }
+    },
+    "optimised sequence (ChangeoverIQ)": {
+      "cips": 132,
+      "today": {
+        "water_l": 646800.0,
+        "naoh_kg": 792.0,
+        "fuel_kwh": 4576.862745098039,
+        "co2_kg": 915.3725490196078,
+        "cost_inr": 90467.01960784313
+      },
+      "optimised": {
+        "water_l": 539629.6069834882,
+        "naoh_kg": 181.70515198225695,
+        "fuel_kwh": 2413.0980392318797,
+        "co2_kg": 482.61960784637597,
+        "cost_inr": 49000.35139552243
+      }
+    }
+  },
+  "combined_with_sequencing_saving_per_line_year": {
+    "water_l": 1047970.4,
+    "naoh_kg": 1762.3,
+    "fuel_kwh": 8821.0,
+    "co2_kg": 1764.2,
+    "cost_inr": 173055.1
+  },
+  "plant": {
+    "flow_lpm": 180.0,
+    "holdup_l": 150.0,
+    "caustic_charge_l": 400.0,
+    "t_amb_c": 25.0,
+    "ua_w_per_k": 250.0,
+    "boiler_eff": 0.85,
+    "k_ref_per_min": 0.2,
+    "t_ref_c": 70.0,
+    "c_ref_pct": 1.0,
+    "ea_j_mol": 40000.0,
+    "n_conc": 0.5,
+    "log_target": 3.0,
+    "safety": 1.2,
+    "endpoint_ppm": 10.0,
+    "reuse_cycles": 5,
+    "topup_frac": 0.1,
+    "return_temp_c": 55.0,
+    "water_inr_per_kl": 60.0,
+    "naoh_inr_per_kg": 45.0,
+    "heat_inr_per_kwh": 3.5,
+    "co2_kg_per_kwh_fuel": 0.2
+  }
+}

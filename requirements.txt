@@ -1,0 +1,7 @@
+numpy>=1.26
+matplotlib>=3.8
+streamlit>=1.30
+plotly>=5.18
+pandas>=2.0
+pytest>=8.0
+scipy>=1.11
